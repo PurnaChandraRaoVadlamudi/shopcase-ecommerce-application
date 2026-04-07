@@ -1,0 +1,65 @@
+.payments-page {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+@media (max-width: 640px) { .payments-page { grid-template-columns: 1fr; } }
+.order-summary, .payment-form-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.order-summary h3, .payment-form-card h3 { font-size: 1.2rem; color: #1a1a2e; margin-bottom: 1rem; }
+.summary-item { display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid #f0f0f0; font-size: 0.9rem; }
+.summary-total { display: flex; justify-content: space-between; padding-top: 1rem; font-size: 1.1rem; }
+.simulated-badge { background: #fff3cd; color: #856404; font-size: 0.7rem; padding: 2px 8px; border-radius: 10px; margin-left: 8px; }
+.payment-form-card form { display: flex; flex-direction: column; gap: 1rem; }
+.payment-form-card input {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+.payment-form-card input:focus { outline: none; border-color: #e94560; }
+.card-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.payment-form-card button {
+  background: #e94560;
+  color: #fff;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.payment-form-card button:disabled { opacity: 0.6; }
+.payment-success {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.success-card {
+  background: #fff;
+  padding: 3rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+.success-icon {
+  width: 70px; height: 70px;
+  background: #2ecc71;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+.success-card h2 { color: #1a1a2e; margin-bottom: 0.5rem; }
+.success-card p { color: #666; margin-bottom: 1.5rem; }
+.success-card button { background: #1a1a2e; color: #fff; border: none; padding: 0.75rem 2rem; border-radius: 8px; }
