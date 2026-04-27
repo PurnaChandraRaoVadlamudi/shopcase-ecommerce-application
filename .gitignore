@@ -1,0 +1,81 @@
+# ===================================================================
+# Terraform .gitignore
+# ===================================================================
+
+# Terraform State Files
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+
+# Terraform Lock Files
+.terraform.lock.hcl
+.terraform.lock/
+
+# Terraform Directory
+.terraform/
+.terrashock/
+
+# Crash Log Files
+crash.log
+crash.*.log
+
+# Exclude all .tfvars files except dev.tfvars and test.tfvars
+# Uncomment if you want to ignore all tfvars
+# *.tfvars
+# !dev.tfvars
+# !test.tfvars
+# !prod.tfvars
+
+# Override Files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Confidential Variables
+# Add secrets and sensitive data here
+# *-secret.tf
+# *-password.tf
+
+# IDE Files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Log Files
+*.log
+
+# Backup Files
+*.bak
+*.backup
+
+# Module Directory (downloaded modules)
+# Keep this ignored if using external module sources
+# Uncomment if you want to ignore downloaded modules
+# modules/
+
+# If modules/ is local (your own modules), keep it tracked:
+# DO NOT ignore local modules folder - it's part of your infrastructure
+# modules/vpc/
+# modules/eks/
+# modules/iam/
+# modules/bastion/
+
+# Local execution plans
+*.out
+
+# Credentials
+.credentials
+*.pem
+*.key
+
+# Terraform Cloud
+.terraformrc
+terraform.rc
